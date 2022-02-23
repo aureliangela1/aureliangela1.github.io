@@ -1,0 +1,964 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    min-height: 8vh;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    z-index: 2;
+
+}
+.airbnblogo{
+    width: 130px;
+    height: 60px;
+    background-image: url(img/airbnblogo.jpg);
+    background-size: 100%;
+    margin: 10px 5px 10px 10px;
+
+}
+.searchicon{
+    width: 40px;
+    height:40px;
+    background-image: url(img/searchicon.png);
+    background-size: 100%;
+    background: no-repeat;
+    margin-top: 5px;
+   
+
+}
+.globelogo{
+    width: 20px;
+    height: 20px;
+    background-image: url(img/airbnblogo.png);
+    background-size: 100%;
+    float: left;
+    margin:0px;
+}
+.logo{
+    color: white;
+    text-transform: lowercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    padding-left: 50px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-family: 'Varela Round', sans-serif;
+}
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    letter-spacing:2px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Varela Round', sans-serif;
+    font-kerning: none;
+    text-align: center;
+}
+.nav-links li{
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.nav-links ul{
+    margin-top: 5px;
+    align-items: center;
+    width: 80px;
+    
+}
+.boxcontainer{
+    margin: auto;
+    position: relative;  
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border:0.10px solid black;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+.elementscontainer{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.search{
+    border:none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-family: 'Varela Round', sans-serif;
+    color:#424242;
+}
+.search:focus{
+    outline:none;
+}
+.material-icons{
+    font-size: 26px;
+    margin-left: 4px;
+    margin-top: 5px;
+    color:black ;
+}
+.boxcontainer2{
+    position: relative;  
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border:0.10px solid black;
+    padding: opx 10px;
+    border-radius: 50px;
+    width: 80px;
+    margin-right: 100px;
+}
+.elementscontainer2{
+    width: 50px;
+    height: 100%;
+    vertical-align: middle;
+    align-items: center;
+}
+.search:focus{
+    outline:none;
+}
+table.elementscontainer2{
+    align-items: center;
+    margin-left: 10px;
+}
+.mobilemenu{
+    position: absolute;
+    display: none;
+    width: 100%;
+    margin: 15px;
+}
+.mobilemenukanan{
+    position: relative;
+    display:flex;
+    justify-content: space-between ;
+    float: left;
+    margin-left:250px;
+}
+
+h5{
+    font-family: 'Varela Round', sans-serif;
+    margin-left: 0px;
+    float: left;
+    color: rgb(99, 97, 97);
+    font-kerning:none;
+    text-align: left;
+    font-size: 12px ;
+}
+.border {
+    position: relative;
+    float: left;
+    height: 1px;
+    width: 500px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+}
+
+.kotakjudul {
+position: absolute;;
+width: 970px;
+height: 70px;
+margin-top: 120px;
+margin-bottom: 100px;
+margin-left: 220px;
+padding: 0%;
+display: block;
+background-color: transparent;
+}
+
+.buttonjudul {
+position: relative;
+width: 150px;
+height: 30px;
+margin-left: 815px;
+padding: 0px;
+display: block;
+background-color: transparent;
+}
+
+.share {
+position: relative;
+float: left;
+width: 75px;
+height: 18px;
+margin-top: 5px;
+margin-left: 0px;
+background-color: transparent;
+display: block;
+
+}
+
+.sharelogo {
+    position: absolute;
+    float: left;
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.save {
+position: relative;
+float: left;
+width: 70px;
+height: 18px;
+margin-top: 5px;
+margin-left: 3px;
+background-color: transparent;
+display: block;
+}
+
+.love {
+    position: absolute;
+    float: left;
+    margin-top: 3px;
+    margin-left: 10px;
+    width: 15px;
+    height: 13px;
+}
+
+h1 {
+font-family: 'Varela Round', sans-serif;
+margin-left: 0px;
+color: rgb(14, 11, 11);
+font-kerning:none;
+text-align: left;
+font-size: 24px ;
+}
+
+.kotakgambar {
+position: absolute;
+margin-top: 170px;
+margin-left: 200px;
+margin-right: 0px;
+padding-right: 0px;
+padding: 20px;
+height: 400px;
+width: 1100px;
+background-color: transparent;
+}
+
+.gambarbesar {
+position: relative;
+float: left;
+height: 330px;
+width: 500px;
+margin-right: 10px;
+border: 4px white;
+border-radius: 10px 0px 0px 10px;
+background-image: url(img/foto1.jpeg);
+background-size: 100%;
+display: block;
+}
+
+.gambarkecil {
+position: relative;
+float: left;
+height: 330px;
+width: 500px;
+margin-right: 0px;
+border: 4px white;;
+display: block;
+}
+
+.showallborder {
+position: absolute;
+height: 30px;
+width: 125px;
+margin-top: 287px;
+margin-left: 308px;
+margin-right: 0px;
+display: block;
+border-color: black;
+border-style: solid;
+border-width: 0.9px;
+border-radius: 5px;
+background-color: white;
+}
+
+.showpic {
+position: relative;
+float: left;
+margin-top: 7px;
+margin-left: 7px;
+width: 13px;
+height: 13px;
+
+}
+
+.angkaslide {
+position: relative;
+width: 50px;
+height: 22px;
+margin-top: 290px;
+margin-left: 420px;
+display: block;
+background-color: black;
+border: black;
+border-radius: 5px;
+opacity: 0.6;
+}
+
+.gambarkecil1 {
+position: relative;
+float: left;
+height: 160px;
+width: 220px;
+margin: 5px;
+margin-top: 0px;
+margin-bottom: 0px;
+display: block;
+background-image: url(img/foto2.jpeg);
+background-size: 100%;
+}
+
+.gambarkecil2 {
+position: relative;
+float: left;
+height: 160px;
+width: 220px;
+margin: 5px;
+margin-top: 0px;
+margin-bottom: 0px;
+border: 4px white;
+border-radius: 0px 10px 0px 0px;
+display: block;
+background-image: url(img/foto3.jpeg);
+background-size: 115%;
+}
+
+.gambarkecil3 {
+position: relative;
+float: left;
+height: 160px;
+width: 220px;
+margin: 5px;
+margin-top: 10px;
+margin-bottom: 0px;
+background-image: url(img/foto4.jpeg);
+background-size: 100%;
+}
+
+.gambarkecil4 {
+position: relative;
+float: left;
+height: 160px;
+width: 220px;
+margin: 5px;
+margin-top: 10px;
+margin-bottom: 0px;
+border: 4px rgb(255, 255, 255);
+border-radius: 0px 0px 10px 0px;
+display: block;
+background-image: url(img/foto5.jpeg);
+background-size: 115%;
+}
+
+
+
+@media (max-width:500px){
+    .kotakgambar {
+        position: relative;
+        width: 500px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .gambarbesar {
+        width: 500px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        margin-top: 80px;
+        display: block;
+        border: 0ch;
+        border-radius: 0%;
+        background-size: 110%;
+    }
+
+    .gambarkecil1 {
+        display: none;
+    }
+    .gambarkecil2 {
+        display: none;
+    }
+    .gambarkecil3 {
+        display: none;
+    }
+    .gambarkecil4 {
+        display: none;
+    }
+
+    .buttonjudul {
+        display: none;
+    }
+
+    .kotakjudul {
+        width: 480px;
+        margin-left: 20px;
+        margin-top: 425px;
+    }
+
+    .showallborder {
+        display: none;
+    }
+}
+
+@media (min-width:1000px) {
+    .angkaslide {
+        display:  none;
+        margin-left: 50px;
+    }
+    .amenitiesmobile {
+        display: none;
+    }
+}
+
+@media (min-width:501px) {
+    .amenitiesmobile {
+        display: none;
+    }
+    
+}
+ 
+
+.gambarkecil:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:1100px){
+    .nav-links li{
+        display: none;
+    }
+}
+
+@media (max-width:700px){
+    .boxcontainer{
+        display: none;
+    }
+    .boxcontainer2{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+    }
+}
+
+
+@media (max-width:500px){
+
+    .mobilemenu{
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }
+    .mobilemenu a .material-icons{
+        font-size: 30px;
+        margin: auto;
+    }
+    .mobilemenu li{
+        list-style: none;
+        margin-top: 6px ;
+        font-family: 'Varela Round', sans-serif;
+    }
+    .mobilemenukanan{
+        display:flex;
+    }
+}
+
+h6{
+    font-family: 'Varela Round', sans-serif;
+    margin-left: 0px;
+    float: left;
+    color: black;
+    font-kerning:none;
+    text-align: left;
+    font-size: 10px ; 
+}
+
+.kotaktulisan{
+    position: absolute;
+    margin-top: 530px;
+    margin-left: 200px;
+    padding: 20px;
+    height: 1700px;
+    width: 600px;
+    float: left;
+    background-color: transparent;
+}
+
+.kotaktulisankanan{
+    position: absolute;
+    margin-top: 530px;
+    margin-left: 750px;
+    padding: 20px;
+    height: 700px;
+    width: 600px;
+    float: left;
+    background-color: transparent;
+}
+
+.tulisankanan{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    float: left;
+    background-color: white;
+    margin-left: 65px;
+    border-radius: 3mm
+}
+
+.row1{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.satukiri{
+    position: relative;
+    float: left;
+    background-color: transparent;
+}
+.satukanan{
+    position: relative;
+    float: left;
+    background-color: transparent;
+    margin-left: 27%;
+}
+
+.starlogoatas {
+    float: left;
+    margin-top: 6px;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+
+}
+
+.borderthin{
+    position: relative;
+    height: 1px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(156, 156, 156);
+}
+
+.reservemobile{
+    display: none;
+}
+
+
+.boxinfo {
+    position: relative;
+    height: 420px;
+    width: 550px;
+    float: left;
+    background-color: transparent;
+}
+
+.host{
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 100px;
+    background-color: transparent;
+}
+
+.texts{
+    position: relative;
+    float: left;
+    height: 60px;
+    width: 400px;
+    margin-top: 20px;
+    background-color: transparent;
+}
+.hosttype{
+    position: relative;
+    margin: 0%;
+    width: 400px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.profpic{
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+}
+
+.profile{
+    position: relative;
+    float: left;
+    margin: 0%;
+    width: 60px;
+    height: 60px;
+}
+
+.facilities{
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 240px;
+    background-color:transparent;
+    margin-top: 15px;
+}
+
+.icon{
+    position: relative;
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+
+.facicon{
+    position: relative;
+    float: left;
+    margin: 0%;
+    width: 25px;
+    height: 25px;
+}
+
+.factext{
+    position: relative;
+    margin: 0%;
+    width: 550px;
+    height: 20px;
+    background-color: transparent;
+    float: left;
+    margin-left: 15px;
+}
+
+.factextb{
+    position: relative;
+    margin: 0%;
+    width: 550px;
+    height: 20px;
+    background-color: transparent;
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.quotes{
+    position: relative;
+    margin: 0%;
+    width: 550px;
+    height: 35px;
+    background-color: transparent;
+    float: left;
+    margin-top: 15px;
+}
+
+.datea{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-top-left-radius: 3mm;
+    border: 1px solid lightgray;
+}
+
+.dateb{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    float: left;
+    margin-top: 25px;
+    border-top-right-radius: 3mm;
+    border: 1px solid lightgray;
+    border-left: none;
+}
+
+.guest{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    float: left;
+    margin-left: 25px;
+    border-bottom-left-radius: 3mm;
+    border-bottom-right-radius: 3mm; 
+    border: 1px solid lightgray;
+    border-top: none;
+}
+
+.reserve{
+    display: block;
+    background-color: rgb(250, 15, 93);
+    height: 50px;
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 180px;
+    border-radius: 3mm;
+}
+
+.pricedetail{
+    position: relative;
+    background-color: transparent;
+    width: 300px;
+    height: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.leftdet{
+    position: relative;
+    background-color: transparent;
+    width: 150px;
+    height: 20px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.rightdet{
+    position: relative;
+    background-color: transparent;
+    width: 150px;
+    height: 20px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.pricedetail .border{
+    width: 300px;
+    margin-top: 0px;
+}
+
+.tulisankananb{
+    position: relative;
+    width: 350px;
+    height: 80px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    float: left;
+    background-color: white;
+    margin-left: 65px;
+    margin-top: 20px;
+    border-radius: 3mm
+}
+
+.report{
+    height: 30px;
+    width: 350px;
+    background-color: transparent;
+    margin-top: 520px;
+    margin-left: 65px;
+}
+
+.repflag{
+    float: left;
+    margin-right: 5px;
+    margin-left: 100px;
+    width: 20px;
+    height: 20px;
+}
+
+.sleep{
+    position: relative;
+    height: 400px;
+    width: 550px;
+    float: left;
+    background-color: transparent;
+}
+
+.bedroom{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    border-radius: 3mm;
+    background-image: url(img/bedroom.jpeg);
+    background-size: 110%;
+}
+
+.sleep .leftdet{
+    position: relative;
+    background-color: transparent;
+    width: 550px;
+    height: 20px;
+    float: left; 
+}
+
+.sleep .border{
+    margin-top: 30px
+}
+
+.amenities {
+    position: relative;
+    height: 400px;
+    width: 550px;
+    float: left;
+    background-color: transparent;
+}
+
+.amenitiesmobile {
+    position: relative;
+    height: 400px;
+    width: 550px;
+    float: left;
+    background-color: transparent;
+}
+
+.judulame{
+    position: relative;
+    background-color: transparent;
+    width: 550px;
+    height: 50px;
+    float: left; 
+    margin-bottom: 30px;
+}
+.amekiri{
+    position: relative;
+    background-color: transparent;
+    width: 250px;
+    height: 30px;
+    float: left; 
+    margin-bottom: 10px;
+}
+
+.amekanan{
+    position: relative;
+    background-color: transparent;
+    width: 250px;
+    height: 30px;
+    float: left; 
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.amenities .facicon{
+    margin-right: 10px;
+}
+
+.amebutton{
+    display: block;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    margin-top: 300px;
+    border-radius: 3mm;
+    border: 1px solid gray;
+}
+
+.pricemobile{
+    width: 450px;
+    height: 120px;
+    background-color: transparent;
+    display: none;
+}
+
+.pricemobile .border {
+    width: 450px;
+    margin-bottom: 20px;
+}
+
+.harga {
+    width: 250px;
+    height: 55px;
+    float: left;
+    background-color: transparent;
+}
+
+.harga .leftdet{
+    width: 250px;
+    background-color: transparent;
+}
+
+.pricemobile .reserve{
+    width: 130px;
+    margin-top: 0px;
+    margin-left: 70px;
+    float: left;
+}
+@media (max-width:500px){
+    .kotaktulisan{
+        margin-left: 0;
+        margin-top: 50px;
+        width: 480px;
+        background-color: transparent;
+    }
+    .kotaktulisankanan{
+        display: none;
+    }
+    .border{
+        width: 450px;
+        margin-bottom: 10px;
+    }
+    .texts, .hosttype{
+        width: 390px;
+    }
+    .profpic{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .boxinfo{
+        width: 480px;
+    }
+    .pricemobile{
+        display: block;
+        margin-top: 15px;
+
+    }
+
+    .profile {
+        margin-top: 0px;
+    }
+
+    .amenities {
+        display: none;
+    }
+
+    .amenitiesmobile {
+        margin-top: 680px;
+        margin-left: 15px;
+        width: 300px;
+    }
+
+    .judulame{
+        position: relative;
+        background-color: transparent;
+        width: 550px;
+        height: 50px;
+        float: left; 
+        margin-bottom: 15px;
+    }
+
+    .amekiri {
+        position: relative;
+        background-color: transparent;
+        width: 250px;
+        height: 30px;
+        float: left; 
+        margin-bottom: 10px;
+    }
+
+    .amebutton {
+        display: block;
+        background-color: white;
+        height: 35px;
+        width: 450px;
+        margin-top: 380px;
+        border-radius: 3mm;
+        border: 1px solid gray;
+    }
+
+}
